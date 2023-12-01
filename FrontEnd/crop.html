@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Recommendation</title>
+    <style>
+        /* Add CSS styles for better presentation */
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        .soil-images {
+            display: flex;
+            justify-content: space-between;
+        }
+        .soil-image {
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+        .soil-image:hover {
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crop Recommendation</h1>
+    <form id="cropForm">
+        <label for="soilType">Select Soil Type:</label>
+        <div class="soil-images">
+            <!-- Soil type images (replace with actual image URLs) -->
+            <img class="soil-image" src="soil1.jpg" alt="Soil Type 1" onclick="selectSoil(1)">
+            <img class="soil-image" src="soil2.jpg" alt="Soil Type 2" onclick="selectSoil(2)">
+            <!-- Add images for other soil types -->
+        </div>
+        
+        <label for="location">Enter Location:</label>
+        <input type="text" id="location" name="location" required>
+
+        <button type="submit">Get Crop Recommendations</button>
+    </form>
+
+    <div id="cropRecommendations">
+        <!-- Display crop recommendations here -->
+    </div>
+
+    <script>
+        let selectedSoil = null;
+
+        function selectSoil(soilNumber) {
+            selectedSoil = soilNumber;
+            const soilImages = document.querySelectorAll('.soil-image');
+            soilImages.forEach((image, index) => {
+                if (index + 1 === soilNumber) {
+                    image.style.border = '2px solid blue';
+                } else {
+                    image.style.border = '2px solid transparent';
+                }
+            });
+        }
+
+        document.getElementById('cropForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            if (selectedSoil === null) {
+                alert('Please select a soil type.');
+                return;
+            }
+            const locationInput = document.getElementById('location').value;
+
+            // Create an object with input data
+            const requestData = {
+                soil_type: selectedSoil,
+                location: locationInput,
+            };
+
+            // Make an AJAX request to your backend to get crop recommendations
+            fetch('/get_crop_recommendations', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(requestData),
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Display recommendations on the webpage
+                const recommendationsDiv = document.getElementById('cropRecommendations');
+                recommendationsDiv.innerHTML = `<p>Crop Recommendations: ${data.recommendations.join(', ')}</p>`;
+            })
+            .catch(error => {
+                console.error(error);
+            });
+        });
+    </script>
+</body>
+</html>
