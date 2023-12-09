@@ -1,0 +1,26 @@
+This Documentation folder includes with the PPT presentation along with the system diagram.
+
+AgriAdvisor Documentation Summary🚜🌾🧑🏼‍🌾
+
+🚜. Introduction:
+   - Overview of AgriAdvisor's mission to empower farmers through innovative agricultural technology.
+   - Brief explanation of the platform's key features and objectives.
+
+🚜🚜. Data Preparation:
+   - Detailed documentation of data collection from diverse sources such as weather stations, satellite imagery, and soil sensors.
+   - Explanation of data cleaning methodologies, including handling missing values, outlier detection, and formatting.
+
+🚜🚜🚜. Machine Learning Algorithms:
+   - In-depth analysis of the machine learning algorithms utilized, such as Decision Trees, Regression Models, Neural Networks (ResNet), SVM, and XGBoost.
+   - Documentation of the training data split, labeling for image recognition, and ensemble learning for robust recommendations.
+
+🚜🚜🚜🚜. Results: Accuracy Scores:
+   - Presentation of accuracy scores for crop recommendation, fertilizer recommendation, and plant disease recommendation using various machine learning algorithms.
+   - Visual representations of the performance results, emphasizing the effectiveness of the models.
+
+🚜🚜🚜🚜🚜. Conclusion and Future Vision:
+   - A concise conclusion highlighting AgriAdvisor's current focus on plant disease prediction and remedies.
+   - Future vision includes proactive disease prediction from plant leaf images, expansion to yield prediction, and addressing waste management for sustainable farming.
+
+
+Through comprehensive documentation, AgriAdvisor ensures transparency, accountability, and the seamless understanding of its processes, methodologies, and future goals.
