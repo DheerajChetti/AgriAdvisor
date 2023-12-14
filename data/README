@@ -1,30 +1,30 @@
 This folder contains various datasets used in the AgriAdvisor project to train models, perform analyses, and generate valuable insights for farmers. Below is a brief description of each file:
 
-## FertilizerData.csv
+# FertilizerData.csv
 - **Description:** This dataset contains information related to various fertilizers, including their types, compositions, and recommended applications.
 - **Usage:** Utilized in the development of the fertilizer recommendation system.
 
-## MergeFileCrop.csv
+# MergeFileCrop.csv
 - **Description:** A merged dataset incorporating information from multiple sources, providing a comprehensive overview of crop-related data.
 - **Usage:** Used in various analyses and model training processes related to crop recommendations.
 
-## cpdata.csv
+# cpdata.csv
 - **Description:** Dataset containing information about different crops, their growth cycles, and specific requirements.
 - **Usage:** Used in conjunction with other datasets for crop recommendation modeling.
 
-## crop_recommendation.csv
+# crop_recommendation.csv
 - **Description:** A dataset specifically structured for crop recommendation modeling, containing features relevant to crop selection.
 - **Usage:** Employed in training machine learning models for crop recommendation.
 
-## dataprep.py
+# dataprep.py
 - **Description:** Python script for data preparation, cleaning, and preprocessing. Includes functions to ensure data integrity and consistency.
 - **Usage:** Used as part of the data preprocessing pipeline before model training.
 
-## fertilizer.csv
+# fertilizer.csv
 - **Description:** Dataset containing details about various fertilizers and their properties.
 - **Usage:** Integrated into the fertilizer recommendation system.
 
-## raw_districtwise_yield_data.csv
+# raw_districtwise_yield_data.csv
 - **Description:** Raw data on crop yields at the district level, providing insights into regional agricultural performance.
 - **Usage:** Potentially used in analyses and yield prediction models (if applicable).
 
