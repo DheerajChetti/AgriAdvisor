@@ -28,11 +28,11 @@ pip install -r requirements.txt
 
 🪴**data/:** Contains datasets used for training and testing.
 
-🪴**models/:** Holds trained machine learning models.
+🪴**Front End/:** Holds the front end code for the fertilizer recommendation model.
 
-🪴**src/:** Source code for AgriAdvisor's algorithms and functionalities.
+🪴**src/:** Source code for AgriAdvisor's Fertilizer recommendation models algorithms and functionalities along with the machine learning models
 
-🪴**docs/:** Documentation files, including project overview presentation and system diagram.
+🪴**Documentation/:** Documentation files, including project overview presentation and system diagram.
 
 
 # DEMO
